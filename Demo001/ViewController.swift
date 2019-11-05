@@ -24,16 +24,6 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         sceneView.showsStatistics = false
         
         // Show scene debug options
-        
-        /*
-         the points only appears on well-textured surface
-         walls, plain tables, won't have these points appear
-         
-         Will points - points that represent notable features detected in the camera image.
-         Their positions in 3D world coordinate space are extrapolated as part of the image analysis that ARKit performs in order to accurately track the device's position, orientation and movement.
-         Taken together, these points loosely correlate to the contours of real-world objects in view of the camera
-         */
-        
         sceneView.debugOptions = [.showFeaturePoints]
         
         // Create a new scene
@@ -60,29 +50,4 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         sceneView.session.pause()
     }
 
-    // MARK: - ARSCNViewDelegate
-    
-/*
-    // Override to create and configure nodes for anchors added to the view's session.
-    func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
-        let node = SCNNode()
-     
-        return node
-    }
-*/
-    
-    func session(_ session: ARSession, didFailWithError error: Error) {
-        // Present an error message to the user
-        
-    }
-    
-    func sessionWasInterrupted(_ session: ARSession) {
-        // Inform the user that the session has been interrupted, for example, by presenting an overlay
-        
-    }
-    
-    func sessionInterruptionEnded(_ session: ARSession) {
-        // Reset tracking and/or remove existing anchors if consistent tracking is required
-        
-    }
 }
