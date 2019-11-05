@@ -21,7 +21,20 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         sceneView.delegate = self
         
         // Show statistics such as fps and timing information
-        sceneView.showsStatistics = true
+        sceneView.showsStatistics = false
+        
+        // Show scene debug options
+        
+        /*
+         the points only appears on well-textured surface
+         walls, plain tables, won't have these points appear
+         
+         Will points - points that represent notable features detected in the camera image.
+         Their positions in 3D world coordinate space are extrapolated as part of the image analysis that ARKit performs in order to accurately track the device's position, orientation and movement.
+         Taken together, these points loosely correlate to the contours of real-world objects in view of the camera
+         */
+        
+        sceneView.debugOptions = [.showFeaturePoints]
         
         // Create a new scene
         let scene = SCNScene(named: "art.scnassets/ship.scn")!
