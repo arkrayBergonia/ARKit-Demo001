@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CubesViewController" customModule="Demo001" customModuleProvider="target">
+            <connections>
+                <outlet property="sceneView" destination="JWW-u4-vak" id="iYU-Vn-2HP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JWW-u4-vak">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                </arscnView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1nj-9q-Ifz">
+                    <rect key="frame" x="129.66666666666666" y="629" width="154.99999999999997" height="57"/>
+                    <color key="backgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="57" id="2fR-aV-aE8"/>
+                        <constraint firstAttribute="width" constant="155" id="WzB-1i-D3s"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                    <state key="normal" title="Add Cube">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="addCubeClicked:" destination="-1" eventType="touchUpInside" id="kfd-SL-ALr"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="JWW-u4-vak" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="2ad-xh-Zon"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="JWW-u4-vak" secondAttribute="bottom" id="L0C-lf-JB7"/>
+                <constraint firstItem="1nj-9q-Ifz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="N3d-eC-pjy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="1nj-9q-Ifz" secondAttribute="bottom" constant="50" id="RPY-rp-9Kf"/>
+                <constraint firstItem="JWW-u4-vak" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="q4a-dr-gR7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JWW-u4-vak" secondAttribute="trailing" id="qKz-yG-i4Q"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="125.54347826086958"/>
+        </view>
+    </objects>
+</document>
