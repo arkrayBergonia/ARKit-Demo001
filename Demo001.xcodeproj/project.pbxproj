@@ -9,7 +9,14 @@
 /* Begin PBXBuildFile section */
 		1D80F2EB237265A00004397C /* CubesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D80F2E9237265A00004397C /* CubesViewController.swift */; };
 		1D80F2EC237265A00004397C /* CubesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D80F2EA237265A00004397C /* CubesViewController.xib */; };
-		1D80F2EE237276310004397C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D80F2ED237276310004397C /* Assets.xcassets */; };
+		1D80F2F2237297900004397C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D80F2F1237297900004397C /* Assets.xcassets */; };
+		1D80F2FE237298230004397C /* explosion.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1D80F2F9237298230004397C /* explosion.wav */; };
+		1D80F2FF237298230004397C /* rooster.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1D80F2FA237298230004397C /* rooster.mp3 */; };
+		1D80F300237298230004397C /* overtake.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1D80F2FB237298230004397C /* overtake.mp3 */; };
+		1D80F301237298230004397C /* watersplash.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1D80F2FC237298230004397C /* watersplash.wav */; };
+		1D80F302237298230004397C /* monkey.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1D80F2FD237298230004397C /* monkey.mp3 */; };
+		1D80F305237298330004397C /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D80F303237298330004397C /* spark.png */; };
+		1D80F306237298330004397C /* Explode.scnp in Resources */ = {isa = PBXBuildFile; fileRef = 1D80F304237298330004397C /* Explode.scnp */; };
 		1D94C83D237140F200A5ABDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D94C83C237140F200A5ABDC /* AppDelegate.swift */; };
 		1D94C83F237140F200A5ABDC /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D94C83E237140F200A5ABDC /* art.scnassets */; };
 		1D94C841237140F200A5ABDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D94C840237140F200A5ABDC /* ViewController.swift */; };
@@ -20,7 +27,14 @@
 /* Begin PBXFileReference section */
 		1D80F2E9237265A00004397C /* CubesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubesViewController.swift; sourceTree = "<group>"; };
 		1D80F2EA237265A00004397C /* CubesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CubesViewController.xib; sourceTree = "<group>"; };
-		1D80F2ED237276310004397C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = art.scnassets/Assets.xcassets; sourceTree = "<group>"; };
+		1D80F2F1237297900004397C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1D80F2F9237298230004397C /* explosion.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = explosion.wav; sourceTree = "<group>"; };
+		1D80F2FA237298230004397C /* rooster.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rooster.mp3; sourceTree = "<group>"; };
+		1D80F2FB237298230004397C /* overtake.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = overtake.mp3; sourceTree = "<group>"; };
+		1D80F2FC237298230004397C /* watersplash.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = watersplash.wav; sourceTree = "<group>"; };
+		1D80F2FD237298230004397C /* monkey.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = monkey.mp3; sourceTree = "<group>"; };
+		1D80F303237298330004397C /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		1D80F304237298330004397C /* Explode.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = Explode.scnp; sourceTree = "<group>"; };
 		1D94C839237140F200A5ABDC /* Demo001.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo001.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D94C83C237140F200A5ABDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D94C83E237140F200A5ABDC /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -50,6 +64,43 @@
 			path = CubesAttack;
 			sourceTree = "<group>";
 		};
+		1D80F2F72372980D0004397C /* Particles */ = {
+			isa = PBXGroup;
+			children = (
+				1D80F304237298330004397C /* Explode.scnp */,
+				1D80F303237298330004397C /* spark.png */,
+			);
+			path = Particles;
+			sourceTree = "<group>";
+		};
+		1D80F2F8237298150004397C /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				1D80F2FB237298230004397C /* overtake.mp3 */,
+				1D80F2F9237298230004397C /* explosion.wav */,
+				1D80F2FC237298230004397C /* watersplash.wav */,
+				1D80F2FD237298230004397C /* monkey.mp3 */,
+				1D80F2FA237298230004397C /* rooster.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		1D80F307237298930004397C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1D94C842237140F200A5ABDC /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1D80F3082372989A0004397C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1D94C840237140F200A5ABDC /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		1D94C830237140F200A5ABDC = {
 			isa = PBXGroup;
 			children = (
@@ -69,13 +120,15 @@
 		1D94C83B237140F200A5ABDC /* Demo001 */ = {
 			isa = PBXGroup;
 			children = (
+				1D80F3082372989A0004397C /* Controllers */,
+				1D80F307237298930004397C /* Views */,
+				1D80F2F8237298150004397C /* Sounds */,
+				1D80F2F72372980D0004397C /* Particles */,
 				1D94C83C237140F200A5ABDC /* AppDelegate.swift */,
 				1D94C84A237140F400A5ABDC /* Info.plist */,
 				1D80F2E82372653E0004397C /* CubesAttack */,
 				1D94C83E237140F200A5ABDC /* art.scnassets */,
-				1D80F2ED237276310004397C /* Assets.xcassets */,
-				1D94C840237140F200A5ABDC /* ViewController.swift */,
-				1D94C842237140F200A5ABDC /* Main.storyboard */,
+				1D80F2F1237297900004397C /* Assets.xcassets */,
 				1D94C847237140F400A5ABDC /* LaunchScreen.storyboard */,
 			);
 			path = Demo001;
@@ -139,11 +192,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D80F305237298330004397C /* spark.png in Resources */,
+				1D80F301237298230004397C /* watersplash.wav in Resources */,
+				1D80F2FE237298230004397C /* explosion.wav in Resources */,
 				1D80F2EC237265A00004397C /* CubesViewController.xib in Resources */,
 				1D94C83F237140F200A5ABDC /* art.scnassets in Resources */,
+				1D80F300237298230004397C /* overtake.mp3 in Resources */,
 				1D94C849237140F400A5ABDC /* LaunchScreen.storyboard in Resources */,
 				1D94C844237140F200A5ABDC /* Main.storyboard in Resources */,
-				1D80F2EE237276310004397C /* Assets.xcassets in Resources */,
+				1D80F302237298230004397C /* monkey.mp3 in Resources */,
+				1D80F2F2237297900004397C /* Assets.xcassets in Resources */,
+				1D80F2FF237298230004397C /* rooster.mp3 in Resources */,
+				1D80F306237298330004397C /* Explode.scnp in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

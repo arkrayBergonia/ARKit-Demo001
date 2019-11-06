@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="edr-dA-vbL">
-                                <rect key="frame" x="87" y="104" width="240" height="169"/>
+                                <rect key="frame" x="92" y="104" width="240" height="169"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Developed by:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vIK-3D-NN4">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="33"/>
@@ -55,7 +55,7 @@
                             <constraint firstItem="edr-dA-vbL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="VED-9v-tkm"/>
                             <constraint firstItem="NhQ-A5-fuR" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="g8t-ri-hRL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NhQ-A5-fuR" secondAttribute="bottom" constant="100" id="onw-y9-sin"/>
-                            <constraint firstItem="edr-dA-vbL" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="s9v-mg-gZd"/>
+                            <constraint firstItem="edr-dA-vbL" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="5" id="s9v-mg-gZd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
