@@ -9,23 +9,23 @@
 /* Begin PBXBuildFile section */
 		1D80F2EB237265A00004397C /* CubesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D80F2E9237265A00004397C /* CubesViewController.swift */; };
 		1D80F2EC237265A00004397C /* CubesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D80F2EA237265A00004397C /* CubesViewController.xib */; };
+		1D80F2EE237276310004397C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D80F2ED237276310004397C /* Assets.xcassets */; };
 		1D94C83D237140F200A5ABDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D94C83C237140F200A5ABDC /* AppDelegate.swift */; };
 		1D94C83F237140F200A5ABDC /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D94C83E237140F200A5ABDC /* art.scnassets */; };
 		1D94C841237140F200A5ABDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D94C840237140F200A5ABDC /* ViewController.swift */; };
 		1D94C844237140F200A5ABDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D94C842237140F200A5ABDC /* Main.storyboard */; };
-		1D94C846237140F400A5ABDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D94C845237140F400A5ABDC /* Assets.xcassets */; };
 		1D94C849237140F400A5ABDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D94C847237140F400A5ABDC /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1D80F2E9237265A00004397C /* CubesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubesViewController.swift; sourceTree = "<group>"; };
 		1D80F2EA237265A00004397C /* CubesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CubesViewController.xib; sourceTree = "<group>"; };
+		1D80F2ED237276310004397C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = art.scnassets/Assets.xcassets; sourceTree = "<group>"; };
 		1D94C839237140F200A5ABDC /* Demo001.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo001.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D94C83C237140F200A5ABDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D94C83E237140F200A5ABDC /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		1D94C840237140F200A5ABDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1D94C843237140F200A5ABDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1D94C845237140F400A5ABDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D94C848237140F400A5ABDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D94C84A237140F400A5ABDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,14 +69,14 @@
 		1D94C83B237140F200A5ABDC /* Demo001 */ = {
 			isa = PBXGroup;
 			children = (
-				1D80F2E82372653E0004397C /* CubesAttack */,
 				1D94C83C237140F200A5ABDC /* AppDelegate.swift */,
+				1D94C84A237140F400A5ABDC /* Info.plist */,
+				1D80F2E82372653E0004397C /* CubesAttack */,
 				1D94C83E237140F200A5ABDC /* art.scnassets */,
+				1D80F2ED237276310004397C /* Assets.xcassets */,
 				1D94C840237140F200A5ABDC /* ViewController.swift */,
 				1D94C842237140F200A5ABDC /* Main.storyboard */,
-				1D94C845237140F400A5ABDC /* Assets.xcassets */,
 				1D94C847237140F400A5ABDC /* LaunchScreen.storyboard */,
-				1D94C84A237140F400A5ABDC /* Info.plist */,
 			);
 			path = Demo001;
 			sourceTree = "<group>";
@@ -142,8 +142,8 @@
 				1D80F2EC237265A00004397C /* CubesViewController.xib in Resources */,
 				1D94C83F237140F200A5ABDC /* art.scnassets in Resources */,
 				1D94C849237140F400A5ABDC /* LaunchScreen.storyboard in Resources */,
-				1D94C846237140F400A5ABDC /* Assets.xcassets in Resources */,
 				1D94C844237140F200A5ABDC /* Main.storyboard in Resources */,
+				1D80F2EE237276310004397C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,7 +312,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Arkray.Demo001;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -330,7 +330,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Arkray.Demo001;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
