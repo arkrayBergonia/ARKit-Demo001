@@ -50,10 +50,10 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--View Controller-->
+        <!--Bad Sugar Game View Controller-->
         <scene sceneID="die-Sc-e6q">
             <objects>
-                <viewController id="iIf-rr-WjB" customClass="ViewController" customModule="Demo001" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="iIf-rr-WjB" customClass="BadSugarGameViewController" customModule="Demo001" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ERq-Fy-vuQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -71,6 +71,9 @@
                                     <constraint firstAttribute="height" constant="80" id="uxH-Ns-bBm"/>
                                 </constraints>
                                 <state key="normal" image="axeIcon"/>
+                                <connections>
+                                    <action selector="onAxeButton:" destination="iIf-rr-WjB" eventType="touchUpInside" id="U6n-hg-UN9"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="qRW-t0-Iyo">
                                 <rect key="frame" x="58" y="59" width="298" height="40"/>
@@ -168,7 +171,9 @@
                         <viewLayoutGuide key="safeArea" id="dWE-Vs-w7B"/>
                     </view>
                     <connections>
-                        <outlet property="sceneView" destination="jcg-XG-VSY" id="Efx-Ft-X7O"/>
+                        <outlet property="sceneView" destination="jcg-XG-VSY" id="yvk-zq-LW6"/>
+                        <outlet property="scoreLabel" destination="zSR-9h-bgi" id="Kqx-gr-OM7"/>
+                        <outlet property="timerLabel" destination="9pe-Sw-7ei" id="j4r-fd-4SP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UNQ-xI-Zr2" sceneMemberID="firstResponder"/>

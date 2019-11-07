@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D5D4A772373F86000930E39 /* BadSugarGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5D4A762373F86000930E39 /* BadSugarGameViewController.swift */; };
 		1D80F2EB237265A00004397C /* CubesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D80F2E9237265A00004397C /* CubesViewController.swift */; };
 		1D80F2EC237265A00004397C /* CubesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D80F2EA237265A00004397C /* CubesViewController.xib */; };
 		1D80F2F2237297900004397C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D80F2F1237297900004397C /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D5D4A762373F86000930E39 /* BadSugarGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadSugarGameViewController.swift; sourceTree = "<group>"; };
 		1D80F2E9237265A00004397C /* CubesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubesViewController.swift; sourceTree = "<group>"; };
 		1D80F2EA237265A00004397C /* CubesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CubesViewController.xib; sourceTree = "<group>"; };
 		1D80F2F1237297900004397C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 		1D80F3082372989A0004397C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1D5D4A762373F86000930E39 /* BadSugarGameViewController.swift */,
 				1D94C840237140F200A5ABDC /* ViewController.swift */,
 			);
 			path = Controllers;
@@ -216,6 +219,7 @@
 			files = (
 				1D80F2EB237265A00004397C /* CubesViewController.swift in Sources */,
 				1D94C841237140F200A5ABDC /* ViewController.swift in Sources */,
+				1D5D4A772373F86000930E39 /* BadSugarGameViewController.swift in Sources */,
 				1D94C83D237140F200A5ABDC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
