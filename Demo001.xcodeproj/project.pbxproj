@@ -8,14 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		1D5D4A772373F86000930E39 /* BadSugarGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5D4A762373F86000930E39 /* BadSugarGameViewController.swift */; };
+		1D5D4A7923740BFB00930E39 /* torpedo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1D5D4A7823740BFB00930E39 /* torpedo.mp3 */; };
+		1D5D4A7B23740EC400930E39 /* Bullet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5D4A7A23740EC400930E39 /* Bullet.swift */; };
 		1D80F2EB237265A00004397C /* CubesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D80F2E9237265A00004397C /* CubesViewController.swift */; };
 		1D80F2EC237265A00004397C /* CubesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D80F2EA237265A00004397C /* CubesViewController.xib */; };
 		1D80F2F2237297900004397C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D80F2F1237297900004397C /* Assets.xcassets */; };
 		1D80F2FE237298230004397C /* explosion.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1D80F2F9237298230004397C /* explosion.wav */; };
-		1D80F2FF237298230004397C /* rooster.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1D80F2FA237298230004397C /* rooster.mp3 */; };
 		1D80F300237298230004397C /* overtake.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1D80F2FB237298230004397C /* overtake.mp3 */; };
-		1D80F301237298230004397C /* watersplash.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1D80F2FC237298230004397C /* watersplash.wav */; };
-		1D80F302237298230004397C /* monkey.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1D80F2FD237298230004397C /* monkey.mp3 */; };
 		1D80F305237298330004397C /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D80F303237298330004397C /* spark.png */; };
 		1D80F306237298330004397C /* Explode.scnp in Resources */ = {isa = PBXBuildFile; fileRef = 1D80F304237298330004397C /* Explode.scnp */; };
 		1D94C83D237140F200A5ABDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D94C83C237140F200A5ABDC /* AppDelegate.swift */; };
@@ -27,14 +26,13 @@
 
 /* Begin PBXFileReference section */
 		1D5D4A762373F86000930E39 /* BadSugarGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadSugarGameViewController.swift; sourceTree = "<group>"; };
+		1D5D4A7823740BFB00930E39 /* torpedo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = torpedo.mp3; sourceTree = "<group>"; };
+		1D5D4A7A23740EC400930E39 /* Bullet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bullet.swift; sourceTree = "<group>"; };
 		1D80F2E9237265A00004397C /* CubesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubesViewController.swift; sourceTree = "<group>"; };
 		1D80F2EA237265A00004397C /* CubesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CubesViewController.xib; sourceTree = "<group>"; };
 		1D80F2F1237297900004397C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D80F2F9237298230004397C /* explosion.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = explosion.wav; sourceTree = "<group>"; };
-		1D80F2FA237298230004397C /* rooster.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rooster.mp3; sourceTree = "<group>"; };
 		1D80F2FB237298230004397C /* overtake.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = overtake.mp3; sourceTree = "<group>"; };
-		1D80F2FC237298230004397C /* watersplash.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = watersplash.wav; sourceTree = "<group>"; };
-		1D80F2FD237298230004397C /* monkey.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = monkey.mp3; sourceTree = "<group>"; };
 		1D80F303237298330004397C /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 		1D80F304237298330004397C /* Explode.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = Explode.scnp; sourceTree = "<group>"; };
 		1D94C839237140F200A5ABDC /* Demo001.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo001.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,9 +78,7 @@
 			children = (
 				1D80F2FB237298230004397C /* overtake.mp3 */,
 				1D80F2F9237298230004397C /* explosion.wav */,
-				1D80F2FC237298230004397C /* watersplash.wav */,
-				1D80F2FD237298230004397C /* monkey.mp3 */,
-				1D80F2FA237298230004397C /* rooster.mp3 */,
+				1D5D4A7823740BFB00930E39 /* torpedo.mp3 */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -99,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				1D5D4A762373F86000930E39 /* BadSugarGameViewController.swift */,
+				1D5D4A7A23740EC400930E39 /* Bullet.swift */,
 				1D94C840237140F200A5ABDC /* ViewController.swift */,
 			);
 			path = Controllers;
@@ -196,16 +193,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D80F305237298330004397C /* spark.png in Resources */,
-				1D80F301237298230004397C /* watersplash.wav in Resources */,
 				1D80F2FE237298230004397C /* explosion.wav in Resources */,
 				1D80F2EC237265A00004397C /* CubesViewController.xib in Resources */,
+				1D5D4A7923740BFB00930E39 /* torpedo.mp3 in Resources */,
 				1D94C83F237140F200A5ABDC /* art.scnassets in Resources */,
 				1D80F300237298230004397C /* overtake.mp3 in Resources */,
 				1D94C849237140F400A5ABDC /* LaunchScreen.storyboard in Resources */,
 				1D94C844237140F200A5ABDC /* Main.storyboard in Resources */,
-				1D80F302237298230004397C /* monkey.mp3 in Resources */,
 				1D80F2F2237297900004397C /* Assets.xcassets in Resources */,
-				1D80F2FF237298230004397C /* rooster.mp3 in Resources */,
 				1D80F306237298330004397C /* Explode.scnp in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,6 +214,7 @@
 			files = (
 				1D80F2EB237265A00004397C /* CubesViewController.swift in Sources */,
 				1D94C841237140F200A5ABDC /* ViewController.swift in Sources */,
+				1D5D4A7B23740EC400930E39 /* Bullet.swift in Sources */,
 				1D5D4A772373F86000930E39 /* BadSugarGameViewController.swift in Sources */,
 				1D94C83D237140F200A5ABDC /* AppDelegate.swift in Sources */,
 			);

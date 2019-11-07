@@ -131,11 +131,11 @@ extension BadSugarGameViewController {
         let (direction, position) = self.getUserVector()
         node.position = position
         var nodeDirection = SCNVector3()
-
-            nodeDirection  = SCNVector3(direction.x*4,direction.y*4,direction.z*4)
-            node.physicsBody?.applyForce(SCNVector3(direction.x,direction.y,direction.z), at: SCNVector3(0,0,0.1), asImpulse: true)
-            playSound(sound: "rooster", format: "mp3")
-
+        
+        nodeDirection  = SCNVector3(direction.x*4,direction.y*4,direction.z*4)
+        node.physicsBody?.applyForce(SCNVector3(direction.x,direction.y,direction.z), at: SCNVector3(0,0,0.1), asImpulse: true)
+        playSound(sound: "torpedo", format: "mp3")
+        
         
         //move node
         node.physicsBody?.applyForce(nodeDirection , asImpulse: true)
@@ -146,11 +146,11 @@ extension BadSugarGameViewController {
     
     //creates nodes
     func createMissile()->SCNNode{
-        var node = SCNNode()
+        var node = Bullet()  //SCNNode()
         
-        let scene = SCNScene(named: "art.scnassets/axe.dae")
-        node = (scene?.rootNode.childNode(withName: "axe", recursively: true)!)!
-        node.scale = SCNVector3(0.3,0.3,0.3)
+//        let scene = SCNScene(named: "art.scnassets/axe.dae")
+//        node = (scene?.rootNode.childNode(withName: "axe", recursively: true)!)!
+//        node.scale = SCNVector3(0.3,0.3,0.3)
         node.name = "bathtub"
         
         //the physics body governs how the object interacts with other objects and its environment
