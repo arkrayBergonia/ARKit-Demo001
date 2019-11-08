@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wK9-as-WDo">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wK9-as-WDo">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,10 +20,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="lPb-85-a4y">
-                                <rect key="frame" x="30" y="90" width="354" height="236"/>
+                                <rect key="frame" x="30" y="90" width="354" height="243"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👾 BAD SUGAR 🍭" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rbK-fQ-SC6">
-                                        <rect key="frame" x="18" y="0.0" width="318.5" height="33"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👾 BAD SUGAR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rbK-fQ-SC6">
+                                        <rect key="frame" x="43.5" y="0.0" width="267.5" height="33"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="33" id="JCR-Hd-71z"/>
                                         </constraints>
@@ -58,7 +56,10 @@
                                         </constraints>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blast away 👾 Bad Sugars and be Diabetes Free!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jWB-2O-9uW">
-                                        <rect key="frame" x="28" y="193" width="298.5" height="43"/>
+                                        <rect key="frame" x="28" y="193" width="298.5" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="JUW-kV-RsX"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -77,7 +78,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jDb-hS-Z5o">
-                                <rect key="frame" x="30" y="392" width="354" height="105.5"/>
+                                <rect key="frame" x="30" y="399" width="354" height="105.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Objectives:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RK9-0h-6TK">
                                         <rect key="frame" x="0.0" y="0.0" width="124" height="33"/>
@@ -167,6 +168,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="132" y="113"/>
         </scene>
         <!--Bad Sugar Game View Controller-->
         <scene sceneID="die-Sc-e6q">
@@ -360,6 +362,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zne-uR-nYT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-45" y="-656"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zTm-7c-Gn4">
+            <objects>
+                <viewController id="U2v-fs-hUj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Yjk-9b-385">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b53-pP-TzX">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                            </arscnView>
+                            <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AlW-Qe-i5t">
+                                <rect key="frame" x="57" y="99" width="300" height="560.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="AlW-Qe-i5t" firstAttribute="leading" secondItem="MNQ-uu-c4G" secondAttribute="leading" constant="57" id="68B-Yk-hsK"/>
+                            <constraint firstItem="b53-pP-TzX" firstAttribute="bottom" secondItem="MNQ-uu-c4G" secondAttribute="bottom" id="8Qz-wy-a3E"/>
+                            <constraint firstItem="b53-pP-TzX" firstAttribute="leading" secondItem="MNQ-uu-c4G" secondAttribute="leading" id="G74-yQ-AP8"/>
+                            <constraint firstItem="b53-pP-TzX" firstAttribute="top" secondItem="Yjk-9b-385" secondAttribute="top" id="Gqg-yt-i7G"/>
+                            <constraint firstItem="AlW-Qe-i5t" firstAttribute="top" secondItem="MNQ-uu-c4G" secondAttribute="top" constant="55" id="NoG-a1-hSP"/>
+                            <constraint firstItem="b53-pP-TzX" firstAttribute="trailing" secondItem="MNQ-uu-c4G" secondAttribute="trailing" id="U8P-m1-TxP"/>
+                            <constraint firstItem="AlW-Qe-i5t" firstAttribute="height" secondItem="b53-pP-TzX" secondAttribute="height" multiplier="0.65" id="YrK-rA-9ZX"/>
+                            <constraint firstItem="MNQ-uu-c4G" firstAttribute="trailing" secondItem="AlW-Qe-i5t" secondAttribute="trailing" constant="57" id="jno-gn-FrG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MNQ-uu-c4G"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rd7-3u-rqu" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1631.8840579710147" y="-656.25"/>
         </scene>
     </scenes>
     <resources>

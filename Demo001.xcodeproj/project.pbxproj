@@ -23,6 +23,8 @@
 		1D94C841237140F200A5ABDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D94C840237140F200A5ABDC /* ViewController.swift */; };
 		1D94C844237140F200A5ABDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D94C842237140F200A5ABDC /* Main.storyboard */; };
 		1D94C849237140F400A5ABDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D94C847237140F400A5ABDC /* LaunchScreen.storyboard */; };
+		1D95152023753D9700E62CEB /* BadSugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D95151F23753D9700E62CEB /* BadSugar.swift */; };
+		1D9515222375413000E62CEB /* LessSugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9515212375413000E62CEB /* LessSugar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		1D94C843237140F200A5ABDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1D94C848237140F400A5ABDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D94C84A237140F400A5ABDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D95151F23753D9700E62CEB /* BadSugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadSugar.swift; sourceTree = "<group>"; };
+		1D9515212375413000E62CEB /* LessSugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessSugar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +100,8 @@
 		1D80F3082372989A0004397C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1D951523237543F600E62CEB /* Nodes */,
 				1D5D4A762373F86000930E39 /* BadSugarGameViewController.swift */,
-				1D5D4A7A23740EC400930E39 /* Bullet.swift */,
 				1D94C840237140F200A5ABDC /* ViewController.swift */,
 				1D040080237517C80043AF6E /* StartViewController.swift */,
 			);
@@ -135,6 +139,16 @@
 				1D94C847237140F400A5ABDC /* LaunchScreen.storyboard */,
 			);
 			path = Demo001;
+			sourceTree = "<group>";
+		};
+		1D951523237543F600E62CEB /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				1D5D4A7A23740EC400930E39 /* Bullet.swift */,
+				1D95151F23753D9700E62CEB /* BadSugar.swift */,
+				1D9515212375413000E62CEB /* LessSugar.swift */,
+			);
+			path = Nodes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,7 +230,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D80F2EB237265A00004397C /* CubesViewController.swift in Sources */,
+				1D95152023753D9700E62CEB /* BadSugar.swift in Sources */,
 				1D94C841237140F200A5ABDC /* ViewController.swift in Sources */,
+				1D9515222375413000E62CEB /* LessSugar.swift in Sources */,
 				1D5D4A7B23740EC400930E39 /* Bullet.swift in Sources */,
 				1D5D4A772373F86000930E39 /* BadSugarGameViewController.swift in Sources */,
 				1D94C83D237140F200A5ABDC /* AppDelegate.swift in Sources */,

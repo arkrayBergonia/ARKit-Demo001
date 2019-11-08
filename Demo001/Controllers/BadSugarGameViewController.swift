@@ -33,12 +33,6 @@ class BadSugarGameViewController: UIViewController, ARSCNViewDelegate, SCNPhysic
     var player: AVAudioPlayer? // Sound Player
     var isTimerRunning = false //to keep track of whether the timer is on
     
-    // for sugarCubes
-    var minHeight : CGFloat = 0.5
-    var maxHeight : CGFloat = 0.9
-    var minDispersal : CGFloat = -4
-    var maxDispersal : CGFloat = 4
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -146,11 +140,7 @@ extension BadSugarGameViewController {
     
     //creates nodes
     func createMissile()->SCNNode{
-        var node = Bullet()  //SCNNode()
-        
-//        let scene = SCNScene(named: "art.scnassets/axe.dae")
-//        node = (scene?.rootNode.childNode(withName: "axe", recursively: true)!)!
-//        node.scale = SCNVector3(0.3,0.3,0.3)
+        let node = Bullet()  //SCNNode()
         node.name = "bathtub"
         
         //the physics body governs how the object interacts with other objects and its environment
@@ -186,15 +176,10 @@ extension BadSugarGameViewController {
             var node = SCNNode()
             
             if (index > 9) && (index % 10 == 0) {
-                let scene = SCNScene(named: "art.scnassets/banana.dae")
-                node = (scene?.rootNode.childNode(withName: "Cube_001", recursively: true)!)!
-                node.scale = SCNVector3(0.2,0.2,0.2)
-                node.name = "banana"
+                node = BadSugar()
+                node.name = "Bad Sugar"
             }else{
-                let s = generateRandomSize()
-                let cube = SCNBox(width: s, height: s, length: s, chamferRadius: 0.03)
-                cube.materials.first?.diffuse.contents = generateRandomColor()
-                node = SCNNode(geometry: cube)
+                node = LessSugar() //SCNNode(geometry: cube)
                 node.name = "cube"
             }
             
@@ -224,25 +209,6 @@ extension BadSugarGameViewController {
     }
 }
 
-extension BadSugarGameViewController {
-    private func generateRandomVector() -> SCNVector3 {
-        return SCNVector3(CGFloat.random(in: minDispersal ... maxDispersal),
-                          CGFloat.random(in: minDispersal ... maxDispersal),
-                          CGFloat.random(in: minDispersal ... maxDispersal))
-    }
-    
-    private func generateRandomColor() -> UIColor {
-        return UIColor(red: CGFloat.random(in: 0 ... 1),
-                       green: CGFloat.random(in: 0 ... 1),
-                       blue: CGFloat.random(in: 0 ... 1),
-                       alpha: CGFloat.random(in: 0.5 ... 1))
-    }
-    
-    private func generateRandomSize() -> CGFloat {
-        return CGFloat.random(in: minHeight ... maxHeight)
-    }
-}
-
 
 // MARK: - Contact Delegate
 extension BadSugarGameViewController {
@@ -253,7 +219,7 @@ extension BadSugarGameViewController {
         if contact.nodeA.physicsBody?.categoryBitMask == CollisionCategory.targetCategory.rawValue
             || contact.nodeB.physicsBody?.categoryBitMask == CollisionCategory.targetCategory.rawValue {
             
-            if (contact.nodeA.name! == "banana" || contact.nodeB.name! == "banana") {
+            if (contact.nodeA.name! == "Bad Sugar" || contact.nodeB.name! == "Bad Sugar") {
                 score+=5
             }else{
                 score+=1
