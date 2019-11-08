@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D040081237517C80043AF6E /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D040080237517C80043AF6E /* StartViewController.swift */; };
 		1D5D4A772373F86000930E39 /* BadSugarGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5D4A762373F86000930E39 /* BadSugarGameViewController.swift */; };
 		1D5D4A7923740BFB00930E39 /* torpedo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1D5D4A7823740BFB00930E39 /* torpedo.mp3 */; };
 		1D5D4A7B23740EC400930E39 /* Bullet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5D4A7A23740EC400930E39 /* Bullet.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D040080237517C80043AF6E /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		1D5D4A762373F86000930E39 /* BadSugarGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadSugarGameViewController.swift; sourceTree = "<group>"; };
 		1D5D4A7823740BFB00930E39 /* torpedo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = torpedo.mp3; sourceTree = "<group>"; };
 		1D5D4A7A23740EC400930E39 /* Bullet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bullet.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				1D5D4A762373F86000930E39 /* BadSugarGameViewController.swift */,
 				1D5D4A7A23740EC400930E39 /* Bullet.swift */,
 				1D94C840237140F200A5ABDC /* ViewController.swift */,
+				1D040080237517C80043AF6E /* StartViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				1D5D4A7B23740EC400930E39 /* Bullet.swift in Sources */,
 				1D5D4A772373F86000930E39 /* BadSugarGameViewController.swift in Sources */,
 				1D94C83D237140F200A5ABDC /* AppDelegate.swift in Sources */,
+				1D040081237517C80043AF6E /* StartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
