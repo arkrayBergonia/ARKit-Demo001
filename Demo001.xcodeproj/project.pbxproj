@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1D040081237517C80043AF6E /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D040080237517C80043AF6E /* StartViewController.swift */; };
+		1D46ADD42378FB9C00863F5A /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D46ADD32378FB9C00863F5A /* InfoViewController.swift */; };
+		1D46ADD62378FDA700863F5A /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D46ADD52378FDA700863F5A /* RoundedButton.swift */; };
 		1D5D4A772373F86000930E39 /* BadSugarGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5D4A762373F86000930E39 /* BadSugarGameViewController.swift */; };
 		1D5D4A7923740BFB00930E39 /* torpedo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1D5D4A7823740BFB00930E39 /* torpedo.mp3 */; };
 		1D5D4A7B23740EC400930E39 /* Bullet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5D4A7A23740EC400930E39 /* Bullet.swift */; };
@@ -29,6 +31,8 @@
 
 /* Begin PBXFileReference section */
 		1D040080237517C80043AF6E /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		1D46ADD32378FB9C00863F5A /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		1D46ADD52378FDA700863F5A /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		1D5D4A762373F86000930E39 /* BadSugarGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadSugarGameViewController.swift; sourceTree = "<group>"; };
 		1D5D4A7823740BFB00930E39 /* torpedo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = torpedo.mp3; sourceTree = "<group>"; };
 		1D5D4A7A23740EC400930E39 /* Bullet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bullet.swift; sourceTree = "<group>"; };
@@ -93,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				1D94C842237140F200A5ABDC /* Main.storyboard */,
+				1D46ADD52378FDA700863F5A /* RoundedButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -103,6 +108,7 @@
 				1D951523237543F600E62CEB /* Nodes */,
 				1D5D4A762373F86000930E39 /* BadSugarGameViewController.swift */,
 				1D94C840237140F200A5ABDC /* ViewController.swift */,
+				1D46ADD32378FB9C00863F5A /* InfoViewController.swift */,
 				1D040080237517C80043AF6E /* StartViewController.swift */,
 			);
 			path = Controllers;
@@ -230,9 +236,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D80F2EB237265A00004397C /* CubesViewController.swift in Sources */,
+				1D46ADD62378FDA700863F5A /* RoundedButton.swift in Sources */,
 				1D95152023753D9700E62CEB /* BadSugar.swift in Sources */,
 				1D94C841237140F200A5ABDC /* ViewController.swift in Sources */,
 				1D9515222375413000E62CEB /* LessSugar.swift in Sources */,
+				1D46ADD42378FB9C00863F5A /* InfoViewController.swift in Sources */,
 				1D5D4A7B23740EC400930E39 /* Bullet.swift in Sources */,
 				1D5D4A772373F86000930E39 /* BadSugarGameViewController.swift in Sources */,
 				1D94C83D237140F200A5ABDC /* AppDelegate.swift in Sources */,

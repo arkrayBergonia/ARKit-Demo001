@@ -14,14 +14,12 @@ class StartViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.startBtn.layer.cornerRadius = 20
-        self.startBtn.clipsToBounds = true
+        
     }
     
 
     @IBAction func startBtnTapped(_ sender: Any) {
-        let lvc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "BadSugarGameVC")
+        let lvc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "InfoVC")
         self.present(lvc, animated: true, completion: nil)
     }
     
