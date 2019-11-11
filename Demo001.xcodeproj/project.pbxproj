@@ -10,6 +10,7 @@
 		1D040081237517C80043AF6E /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D040080237517C80043AF6E /* StartViewController.swift */; };
 		1D46ADD42378FB9C00863F5A /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D46ADD32378FB9C00863F5A /* InfoViewController.swift */; };
 		1D46ADD62378FDA700863F5A /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D46ADD52378FDA700863F5A /* RoundedButton.swift */; };
+		1D46ADD9237902D000863F5A /* Entities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D46ADD8237902D000863F5A /* Entities.swift */; };
 		1D5D4A772373F86000930E39 /* BadSugarGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5D4A762373F86000930E39 /* BadSugarGameViewController.swift */; };
 		1D5D4A7923740BFB00930E39 /* torpedo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1D5D4A7823740BFB00930E39 /* torpedo.mp3 */; };
 		1D5D4A7B23740EC400930E39 /* Bullet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5D4A7A23740EC400930E39 /* Bullet.swift */; };
@@ -33,6 +34,7 @@
 		1D040080237517C80043AF6E /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		1D46ADD32378FB9C00863F5A /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		1D46ADD52378FDA700863F5A /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		1D46ADD8237902D000863F5A /* Entities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entities.swift; sourceTree = "<group>"; };
 		1D5D4A762373F86000930E39 /* BadSugarGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadSugarGameViewController.swift; sourceTree = "<group>"; };
 		1D5D4A7823740BFB00930E39 /* torpedo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = torpedo.mp3; sourceTree = "<group>"; };
 		1D5D4A7A23740EC400930E39 /* Bullet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bullet.swift; sourceTree = "<group>"; };
@@ -65,6 +67,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D46ADD7237902C000863F5A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1D46ADD8237902D000863F5A /* Entities.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		1D80F2E82372653E0004397C /* CubesAttack */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +143,7 @@
 		1D94C83B237140F200A5ABDC /* Demo001 */ = {
 			isa = PBXGroup;
 			children = (
+				1D46ADD7237902C000863F5A /* Models */,
 				1D80F3082372989A0004397C /* Controllers */,
 				1D80F307237298930004397C /* Views */,
 				1D80F2F8237298150004397C /* Sounds */,
@@ -245,6 +256,7 @@
 				1D5D4A772373F86000930E39 /* BadSugarGameViewController.swift in Sources */,
 				1D94C83D237140F200A5ABDC /* AppDelegate.swift in Sources */,
 				1D040081237517C80043AF6E /* StartViewController.swift in Sources */,
+				1D46ADD9237902D000863F5A /* Entities.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
