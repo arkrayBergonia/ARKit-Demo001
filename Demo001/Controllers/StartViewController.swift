@@ -12,6 +12,8 @@ class StartViewController: UIViewController {
 
     @IBOutlet weak var startBtn: UIButton!
     
+    private var gameStatus: GameStatus = GameStatus.GameJustStarted
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,6 +23,14 @@ class StartViewController: UIViewController {
     @IBAction func startBtnTapped(_ sender: Any) {
         let lvc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "InfoVC")
         self.present(lvc, animated: true, completion: nil)
+    }
+ 
+    func updateGameStatus(_ status: GameStatus) {
+        self.gameStatus = status
+    }
+    
+    func checkGameStatus() -> GameStatus {
+        return self.gameStatus
     }
     
 }
