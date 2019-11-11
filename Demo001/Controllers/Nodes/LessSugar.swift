@@ -11,6 +11,8 @@ import SceneKit
 
 class LessSugar: SCNNode {
     
+    let infoVC = InfoViewController()
+    
     // for sugarCubes
     var minHeight : CGFloat = 0.5
     var maxHeight : CGFloat = 0.9
@@ -28,9 +30,11 @@ class LessSugar: SCNNode {
         self.physicsBody?.isAffectedByGravity = false
         
         // add texture
+        let imageName = Entities().targetAllotted(for: self.infoVC.currentRoundInfo)
+        let image = UIImage(named: "donut")
         let material = SCNMaterial()
-        material.diffuse.contents = generateRandomColor()
-        self.geometry?.materials  = [material, material, material, material, material, material]
+        material.diffuse.contents = image //generateRandomColor()
+        self.geometry?.materials  = [material, material, material, material]
     }
     
     required init?(coder aDecoder: NSCoder) {

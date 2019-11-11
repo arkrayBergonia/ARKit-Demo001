@@ -16,12 +16,15 @@ class InfoViewController: UIViewController {
     @IBOutlet weak var subHeaderLabel: UILabel!
     @IBOutlet weak var targetDescriptionTextView: UITextView!
     @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var mainButton: RoundedButton!
     
+    private var gameStatus: GameStatus = GameStatus.GameJustStarted
     var gameIsOver: Bool = false
     var currentRoundNumber: Int = 1
     var currentRoundInfo: Round = Round.One
+    var lastScore = 0
     
-    let startVC = StartViewController()
+    let defaults = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,46 +33,46 @@ class InfoViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.currentRoundInfo = Round(rawValue: currentRoundNumber) ?? Round.One
         
+        self.gameIsOver = self.defaults.bool(forKey: "gameOver")
+        self.lastScore = self.defaults.integer(forKey: "score")
+        self.defaults.removeObject(forKey: "gameOver")
+        self.defaults.removeObject(forKey: "score")
         self.updateHeadLabels()
     }
     
     @IBAction func startBtnTapped(_ sender: Any) {
-        
-        switch startVC.checkGameStatus() {
-        case .GameJustStarted, .GameInProgress:
-            self.startVC.updateGameStatus(GameStatus.GameInProgress)
+        if !gameIsOver {
             let lvc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "BadSugarGameVC")
             self.present(lvc, animated: true, completion: nil)
-        case .GameIsOver:
-            self.startVC.updateGameStatus(GameStatus.GameJustStarted)
+        } else {
             self.currentRoundNumber = 1
+            self.gameIsOver = false
             self.dismiss(animated: true, completion: nil)
         }
         
     }
 
     private func updateHeadLabels() {
-        self.headerTitleLabel.text = !gameIsOver ? "Game Over" : "Mission Start"
-        self.subHeaderLabel.text = !gameIsOver ? "Did you know?" : "Round \(self.currentRoundNumber)"
+        self.headerTitleLabel.text = gameIsOver ? "Game Over" : "Mission Start"
+        self.subHeaderLabel.text = gameIsOver ? "Did you know?" : "Round \(self.currentRoundNumber)"
         self.targetImage.image = UIImage(named: Entities().targetAllotted(for: self.currentRoundInfo))
+        self.mainButton.setTitle(gameIsOver ? "Okay, I understand" : "Okay, Let's start", for: .normal)
+        self.scoreLabel.isHidden = gameIsOver ? false : true
+        self.scoreLabel.text = "Last score: \(lastScore)"
         
-        switch startVC.checkGameStatus() {
-        case .GameJustStarted, .GameInProgress:
-            self.targetDescriptionTextView.text = "For this round, you need to obtain a score of \(Entities().targetScore(for: self.currentRoundInfo)) within \(Entities().timeAllotted(for: self.currentRoundInfo)). Do your best"
+        if !gameIsOver {
+            if self.currentRoundNumber != 5 {
+                self.currentRoundNumber += 1
+            }
             
-        case .GameIsOver:
-            self.targetDescriptionTextView.text = Entities().descriptionAllotted(for: self.currentRoundInfo)
-        }
-    }
-    
-    public func updateRoundNumber() {
-        if self.currentRoundNumber != 5 {
-            self.currentRoundNumber + 1
+            self.targetDescriptionTextView.text = "To proceed to the next round, you need to obtain a score of \(Entities().targetScore(for: self.currentRoundInfo)) points within \(Entities().timeAllotted(for: self.currentRoundInfo)) seconds. Do your best!"
         } else {
             self.currentRoundNumber = 1
+            self.targetDescriptionTextView.text = Entities().descriptionAllotted(for: self.currentRoundInfo)
         }
+        
+        self.currentRoundInfo = Round(rawValue: self.currentRoundNumber) ?? Round.One
     }
-
+    
 }

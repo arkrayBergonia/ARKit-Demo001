@@ -252,7 +252,7 @@
                                                 <viewLayoutGuide key="safeArea" id="KXN-ks-Qvo"/>
                                                 <state key="normal" image="score"/>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zSR-9h-bgi">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zSR-9h-bgi">
                                                 <rect key="frame" x="48" y="0.0" width="38" height="40"/>
                                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="16"/>
                                                 <nil key="textColor"/>
@@ -373,6 +373,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="space" translatesAutoresizingMaskIntoConstraints="NO" id="BCH-cd-Tag">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
                             <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AlW-Qe-i5t">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
@@ -413,9 +416,9 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Did you know that donuts contains high amount of sugar and also high in calories. " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Izp-9J-Ci0">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Did you know that donuts contains high amount of sugar and also high in calories. " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Izp-9J-Ci0">
                                                 <rect key="frame" x="0.0" y="304" width="358" height="80"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="80" id="iJd-6o-xWN"/>
                                                 </constraints>
@@ -446,7 +449,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="1" alpha="0.39554794520547948" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="4ov-JF-7XL" secondAttribute="trailing" constant="30" id="3A2-hm-Tnd"/>
                                     <constraint firstAttribute="bottom" secondItem="4ov-JF-7XL" secondAttribute="bottom" constant="60" id="4bH-Xf-72U"/>
@@ -460,7 +463,11 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="AlW-Qe-i5t" firstAttribute="height" secondItem="Yjk-9b-385" secondAttribute="height" id="0Mv-kM-dVN"/>
+                            <constraint firstItem="MNQ-uu-c4G" firstAttribute="trailing" secondItem="BCH-cd-Tag" secondAttribute="trailing" id="3Dh-1w-bda"/>
                             <constraint firstItem="AlW-Qe-i5t" firstAttribute="leading" secondItem="MNQ-uu-c4G" secondAttribute="leading" id="68B-Yk-hsK"/>
+                            <constraint firstItem="BCH-cd-Tag" firstAttribute="top" secondItem="Yjk-9b-385" secondAttribute="top" id="Mw7-aU-hoi"/>
+                            <constraint firstAttribute="bottom" secondItem="BCH-cd-Tag" secondAttribute="bottom" id="VYY-Vu-Vgc"/>
+                            <constraint firstItem="BCH-cd-Tag" firstAttribute="leading" secondItem="MNQ-uu-c4G" secondAttribute="leading" id="Ydr-3Q-fi6"/>
                             <constraint firstItem="MNQ-uu-c4G" firstAttribute="trailing" secondItem="AlW-Qe-i5t" secondAttribute="trailing" id="jno-gn-FrG"/>
                             <constraint firstItem="AlW-Qe-i5t" firstAttribute="top" secondItem="Yjk-9b-385" secondAttribute="top" id="xJv-Xu-Ygi"/>
                         </constraints>
@@ -468,6 +475,7 @@
                     </view>
                     <connections>
                         <outlet property="headerTitleLabel" destination="WjR-LS-NjC" id="aP2-ad-2D1"/>
+                        <outlet property="mainButton" destination="4ov-JF-7XL" id="vp3-jB-0kU"/>
                         <outlet property="nurseImage" destination="R42-Bd-Mb2" id="Exb-1K-IV6"/>
                         <outlet property="scoreLabel" destination="03z-JL-4a7" id="m85-t8-znn"/>
                         <outlet property="subHeaderLabel" destination="DWg-5W-sr8" id="qHj-5X-GP8"/>

@@ -44,7 +44,7 @@ class Entities {
         case .One:
             return 30
         case .Two, .Three:
-            return 50
+            return 40
         case .Four, .Five:
             return 60
         }

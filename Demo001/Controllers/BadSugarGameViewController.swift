@@ -27,6 +27,9 @@ class BadSugarGameViewController: UIViewController, ARSCNViewDelegate, SCNPhysic
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
     
+    let infoVC = InfoViewController()
+    let defaults = UserDefaults.standard
+    
     var score = 0 //used to store the score
     var seconds = 60 //to store how many sceonds the game is played for
     var timer = Timer() //timer
@@ -60,6 +63,8 @@ class BadSugarGameViewController: UIViewController, ARSCNViewDelegate, SCNPhysic
         
         // Run the view's session
         sceneView.session.run(configuration)
+        
+        self.seconds = Entities().timeAllotted(for: self.infoVC.currentRoundInfo)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -87,6 +92,10 @@ extension BadSugarGameViewController {
     @objc func updateTimer() {
         if seconds == 0 {
             timer.invalidate()
+            if score < Entities().targetScore(for: self.infoVC.currentRoundInfo) {
+                self.defaults.set(true, forKey: "gameOver")
+            }
+            
             gameOver()
         }else{
             seconds -= 1
@@ -104,9 +113,8 @@ extension BadSugarGameViewController {
     // MARK: - game over
     func gameOver(){
         //store the score in UserDefaults
-        let defaults = UserDefaults.standard
-        defaults.set(score, forKey: "score")
-        
+        self.defaults.set(score, forKey: "score")
+        self.score = 0
         //go back to the Home View Controller
         self.dismiss(animated: true, completion: nil)
     }
