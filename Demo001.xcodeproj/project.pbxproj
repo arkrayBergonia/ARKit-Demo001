@@ -21,6 +21,7 @@
 		1D80F300237298230004397C /* overtake.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1D80F2FB237298230004397C /* overtake.mp3 */; };
 		1D80F305237298330004397C /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D80F303237298330004397C /* spark.png */; };
 		1D80F306237298330004397C /* Explode.scnp in Resources */ = {isa = PBXBuildFile; fileRef = 1D80F304237298330004397C /* Explode.scnp */; };
+		1D8D5C8C237E73B500E4F8F8 /* CustomSugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8D5C8B237E73B500E4F8F8 /* CustomSugar.swift */; };
 		1D94C83D237140F200A5ABDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D94C83C237140F200A5ABDC /* AppDelegate.swift */; };
 		1D94C83F237140F200A5ABDC /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D94C83E237140F200A5ABDC /* art.scnassets */; };
 		1D94C841237140F200A5ABDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D94C840237140F200A5ABDC /* ViewController.swift */; };
@@ -45,6 +46,7 @@
 		1D80F2FB237298230004397C /* overtake.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = overtake.mp3; sourceTree = "<group>"; };
 		1D80F303237298330004397C /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 		1D80F304237298330004397C /* Explode.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = Explode.scnp; sourceTree = "<group>"; };
+		1D8D5C8B237E73B500E4F8F8 /* CustomSugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSugar.swift; sourceTree = "<group>"; };
 		1D94C839237140F200A5ABDC /* Demo001.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo001.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D94C83C237140F200A5ABDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D94C83E237140F200A5ABDC /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				1D5D4A7A23740EC400930E39 /* Bullet.swift */,
 				1D95151F23753D9700E62CEB /* BadSugar.swift */,
 				1D9515212375413000E62CEB /* LessSugar.swift */,
+				1D8D5C8B237E73B500E4F8F8 /* CustomSugar.swift */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				1D5D4A7B23740EC400930E39 /* Bullet.swift in Sources */,
 				1D5D4A772373F86000930E39 /* BadSugarGameViewController.swift in Sources */,
 				1D94C83D237140F200A5ABDC /* AppDelegate.swift in Sources */,
+				1D8D5C8C237E73B500E4F8F8 /* CustomSugar.swift in Sources */,
 				1D040081237517C80043AF6E /* StartViewController.swift in Sources */,
 				1D46ADD9237902D000863F5A /* Entities.swift in Sources */,
 			);

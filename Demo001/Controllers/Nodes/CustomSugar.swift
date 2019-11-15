@@ -1,15 +1,15 @@
 //
-//  LessSugar.swift
+//  CustomSugar.swift
 //  Demo001
 //
-//  Created by Francis Jemuel Bergonia on 11/8/19.
+//  Created by Francis Jemuel Bergonia on 11/15/19.
 //  Copyright © 2019 Arkray Marketing, Inc. All rights reserved.
 //
 
 import UIKit
 import SceneKit
 
-class LessSugar: SCNNode {
+class CustomSugar: SCNNode {
     
     let infoVC = InfoViewController()
     
@@ -30,9 +30,11 @@ class LessSugar: SCNNode {
         self.physicsBody?.isAffectedByGravity = false
         
         // add texture
+        let imageName = Entities().targetAllotted(for: self.infoVC.currentRoundInfo)
+        let image = UIImage(named: imageName)
         let material = SCNMaterial()
-        material.diffuse.contents = generateRandomColor()
-        self.geometry?.materials  = [material, material, material, material, material, material]
+        material.diffuse.contents = image //generateRandomColor()
+        self.geometry?.materials  = [material, material, material, material]
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -41,7 +43,7 @@ class LessSugar: SCNNode {
     
 }
 
-extension LessSugar {
+extension CustomSugar {
     private func generateRandomVector() -> SCNVector3 {
         return SCNVector3(CGFloat.random(in: minDispersal ... maxDispersal),
                           CGFloat.random(in: minDispersal ... maxDispersal),
